@@ -1,0 +1,19 @@
+.sidemenu {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 30em;
+  color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .sidemenu {
+    flex-direction: row;
+    min-height: unset;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+  }
+}

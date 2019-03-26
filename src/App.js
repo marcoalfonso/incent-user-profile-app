@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { userActions } from './actions/userActions';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.png';
-import './App.css';
-import Home from './pages/home/home';
-import Profile from './pages/profile/profile';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { userActions } from './actions/userActions'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import logo from './logo.png'
+import './App.css'
+import Home from './pages/home/home'
+import Profile from './pages/profile/profile'
 
 class App extends Component {
   userAction = (event) => {

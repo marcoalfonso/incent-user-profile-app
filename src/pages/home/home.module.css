@@ -26,20 +26,6 @@
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30em;
-  flex-wrap: wrap-reverse;
-}
-
-.body {
-  flex: none;
-  max-width: 50%;
-  color: white;
-}
-
 .button {
   border: 2px solid #FFDD00;
   border-radius: 30px;
@@ -67,10 +53,5 @@
 
   .navbarBrand {
     margin-left: 0px;
-  }
-
-  .body {
-    padding-top: 80px;
-    max-width: 80%;
   }
 }

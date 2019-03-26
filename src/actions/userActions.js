@@ -1,6 +1,6 @@
 export const userActions = () => dispatch => {
   dispatch({
-    type: 'STEP_1',
+    type: 'SUBMIT_FORM',
     payload: 'result'
   })
 }

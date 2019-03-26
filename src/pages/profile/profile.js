@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link } from "react-router-dom";
-import { userActions } from '../../actions/userActions';
-import styles from './profile.module.css';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { userActions } from '../../actions/userActions'
+import UserRegistrationForm from '../../components/userRegistrationForm/userRegistrationForm'
+import styles from './profile.module.css'
 
 class Profile extends Component {
   render() {
     return (
-      <div className="home">
-        <header className="App-header">
-          <nav className="nav">
-            <Link to="/">Back</Link>
-            <Link to="/">Close</Link>
-          </nav>
-        </header>
+      <div>
         <section className={styles.container}>
+          <UserRegistrationForm />
         </section>
       </div>
     );

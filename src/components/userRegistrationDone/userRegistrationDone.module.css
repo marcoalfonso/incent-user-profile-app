@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30em;
+  flex-wrap: wrap-reverse;
+}
+
+.body {
+  flex: none;
+  max-width: 50%;
+  color: white;
+}
+
+.button {
+  border: 2px solid #FFDD00;
+  border-radius: 30px;
+  padding: 14px 53px;
+  color: #000000;
+  background-color: #FFDD00;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.button a {
+  color: #000000;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .body {
+    padding-top: 80px;
+    max-width: 80%;
+  }
+}
