@@ -10,11 +10,16 @@
 .body {
   flex: none;
   max-width: 50%;
+  min-width: 50%;
 }
 
 @media (max-width: 768px) {
   .body {
-    padding-top: 80px;
+    /* width: 100%; */
     max-width: 80%;
+    padding-top: 40px;
+    min-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

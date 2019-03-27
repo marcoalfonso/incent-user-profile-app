@@ -1,0 +1,16 @@
+.navbar {
+  align-items: center;
+  background: #F4F2F0;
+}
+
+.title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .flexForm {
+    display:flex;
+    flex-flow: column;
+  }
+}
