@@ -1,18 +1,11 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { userActions } from './actions/userActions'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from './logo.png'
 import './App.css'
 import Home from './pages/home/home'
 import Profile from './pages/profile/profile'
 
 class App extends Component {
-  userAction = (event) => {
-    this.props.userActions();
-  }
-
   render() {
     return (
       <div className="App">
@@ -25,12 +18,4 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
- ...state
-})
-
-const mapDispatchToProps = dispatch => ({
-  userActions: () => dispatch(userActions())
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

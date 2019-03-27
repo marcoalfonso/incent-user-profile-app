@@ -10,7 +10,7 @@ class Home extends Component {
       <div>
         <header>
           <nav className={`nav ` + styles.navbar}>
-            <a className={`navbar-brand ` + styles.navbarBrand} href="#">
+            <a className={`navbar-brand ` + styles.navbarBrand} href="/">
               <img src={logo} width="160" height="30" alt="Incent logo" />
             </a>
             <Link className={styles.homeLink} to="/">Home</Link>

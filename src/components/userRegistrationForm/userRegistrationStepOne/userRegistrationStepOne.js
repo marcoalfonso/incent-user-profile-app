@@ -1,6 +1,5 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import { Link } from 'react-router-dom'
 import styles from './userRegistrationStepOne.module.css'
 import Navbar from '../../../components/navbar/navbar'
 import Sidemenu from '../../../components/sidemenu/sidemenu'

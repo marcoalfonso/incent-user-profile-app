@@ -14,7 +14,7 @@ export default ({ children  }) => {
         </a>
       </li>
       <li className={`nav-item ` + styles.secondItem}>
-        <a className="nav-link disabled" href="#">
+        <a className="nav-link disabled" href="/settings">
           <div className={styles.mobileButtonContainer}>
             <img className={styles.closeIcon} src={CloseIcon} alt="Mobile Close Button" />
           </div>
@@ -22,7 +22,7 @@ export default ({ children  }) => {
         </a>
       </li>
       <li className={`nav-item ` + styles.thirdItem}>
-        <a className="nav-link disabled" href="#">
+        <a className="nav-link disabled" href="/logout">
           <div className={styles.mobileButtonContainer}>
             <img className={styles.closeIcon} src={CloseIcon} alt="Mobile Close Button" />
           </div>

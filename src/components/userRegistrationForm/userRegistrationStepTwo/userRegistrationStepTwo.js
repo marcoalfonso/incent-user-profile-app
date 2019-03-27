@@ -1,6 +1,5 @@
 import React from 'react'
 import { Field, reduxForm } from 'redux-form'
-import { Link } from 'react-router-dom'
 import validate from '../../../components/utils/validate'
 import styles from './userRegistrationStepTwo.module.css'
 import Navbar from '../../../components/navbar/navbar'
@@ -29,7 +28,7 @@ const renderCountriesSelector = ({ input, meta: { touched, error } }) => (
 const WizardFormThirdPage = props => {
   const { handleSubmit, pristine, previousPage, submitting } = props
   return (
-    <form className={styles.flexForm} onSubmit={props.handleSubmit}>
+    <form className={styles.flexForm} onSubmit={handleSubmit}>
       <Navbar>
         <button type="button" className={styles.previous} onClick={previousPage}>
           <BackButton />
@@ -42,7 +41,7 @@ const WizardFormThirdPage = props => {
         <div className="row text-left mb-lg-4">
           <div className="col-xs-12 col-md-6">
             <label>Country</label>
-            <Field name="countries" component={renderCountriesSelector} />
+            <Field name="country" component={renderCountriesSelector} />
           </div>
         </div>
         <div className="row text-left">
@@ -68,8 +67,8 @@ const WizardFormThirdPage = props => {
   )
 }
 export default reduxForm({
-  form: 'wizard', //Form name is same
+  form: 'user-registration-form',
   destroyOnUnmount: false,
-  forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
+  forceUnregisterOnUnmount: true,
   validate
 })(WizardFormThirdPage)
