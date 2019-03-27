@@ -14,7 +14,7 @@ const UserRegistrationIntro = (props) => {
   return (
     <form  className={styles.flexForm} onSubmit={handleSubmit}>
       <Navbar>
-        <Link to="/"><BackButton /></Link>
+        <a href="/"><BackButton /></a>
         <a className={styles.absoluteRight} href="/"><CloseButton /></a>
       </Navbar>
       <Sidemenu />

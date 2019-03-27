@@ -1,6 +1,11 @@
-import React from 'react';
-import { mount } from "enzyme";
-import UserRegistrationForm from './userRegistrationForm';
+import React from 'react'
+import { mount, shallow } from "enzyme"
+import { Provider } from 'react-redux'
+import UserRegistrationForm from './userRegistrationForm'
+import configureMockStore from "redux-mock-store"
+
+const mockStore = configureMockStore();
+const store = mockStore({});
 
 describe("User Registration Form", () => {
   let props;
@@ -8,7 +13,9 @@ describe("User Registration Form", () => {
   const form = () => {
     if (!mountedForm) {
       mountedForm = mount(
-        <UserRegistrationForm {...props} />
+        <Provider store={store}>
+          <UserRegistrationForm {...props} />
+        </Provider>
       );
     }
     return mountedForm;
@@ -25,9 +32,9 @@ describe("User Registration Form", () => {
   });
 
   it("Form has a title", () => {
-    const wrapper = card();
+    const wrapper = form();
     expect(
-      wrapper.find('div').text()
-    ).toEqual('Introduction')
+      wrapper.find('button').text()
+    ).toEqual('Next')
   });
 });
